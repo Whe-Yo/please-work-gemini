@@ -53,29 +53,9 @@
 
 ---
 
-## 에이전트별 적용 가이드
+## 적용 방법
 
-### 공통 절차
-1. [`rules/RULES.md`](rules/RULES.md)를 에이전트 룰 파일에 붙여넣습니다.
-2. [`rules/rule_plan_work_template.md`](rules/rule_plan_work_template.md)를 프로젝트 루트에 복사해 RPW 문서로 사용합니다.
-3. 에이전트에게 `setup` 스킬을 실행하도록 지시합니다 — 스킬 자동 선택·장착이 완료됩니다.
-4. [`mcp/mcp_template.json`](mcp/mcp_template.json)의 서버 명세를 에이전트 MCP 설정에 병합합니다.
+1. [`rules/RULES.md`](rules/RULES.md) 내용을 에이전트의 룰 파일에 주입합니다.
+2. 에이전트에게 `setup` 스킬을 실행하도록 지시합니다. 이후 스킬 선택·장착·MCP 등록·사용자 설정 확인은 에이전트가 스스로 처리합니다.
 
-### Claude Code
-- 룰 적용: `CLAUDE.md`에 `rules/RULES.md` 내용을 붙여넣습니다.
-- MCP 등록:
-  ```bash
-  claude mcp add context7 npx -y @upstash/context7-mcp
-  claude mcp add sequential-thinking npx -y @modelcontextprotocol/server-sequential-thinking
-  claude mcp add exa npx -y mcp-remote https://mcp.exa.ai/mcp
-  claude mcp add memory npx -y @modelcontextprotocol/server-memory
-  ```
-
-### Gemini CLI / Antigravity IDE
-- 룰 적용: `~/.gemini/GEMINI.md`에 `rules/RULES.md` 내용을 붙여넣습니다.
-- 스킬 적용: 원하는 스킬 폴더를 `~/.agents/skills/`로 복사합니다.
-- MCP 등록: `~/.gemini/settings.json`의 `mcpServers`에 `mcp_template.json` 내용을 병합합니다.
-
-### Cursor / Cline
-- 룰 적용: 프로젝트 루트의 `.cursorrules` 또는 `.clinerules`에 `rules/RULES.md` 내용을 붙여넣습니다.
-- MCP 등록: Cursor 설정의 `Features → MCP`에 각 서버의 `command`와 `args`를 등록합니다.
+> RPW 문서는 프로젝트별로 생성됩니다. 에이전트가 새 프로젝트에서 처음 실행될 때 해당 프로젝트 루트에 자동으로 생성합니다.
