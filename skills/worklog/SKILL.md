@@ -1,11 +1,11 @@
 ---
 name: worklog
-description: work.md를 표준 형식으로 갱신. 작업 단위 완료 시, 비자명한 결정 직후, 접근 실패 직후, "기록해둬" 요청 시 사용.
+description: RPW 문서(rule_plan_work.md 또는 work.md)를 표준 형식으로 갱신. 작업 단위 완료 시, 비자명한 결정 직후, 접근 실패 직후, "기록해둬" 요청 시 사용.
 ---
 
-# Worklog — work.md 관리
+# Worklog — RPW 문서 관리
 
-`work.md`는 세션 간 기억을 잇는 유일한 수단이다. 다음 구조를 유지한다:
+RPW 문서는 세션 간 기억을 잇는 유일한 수단이다. 프로젝트 루트에서 `rule_plan_work.md` 또는 `work.md`를 찾아 사용한다. 둘 다 없으면 `rule_plan_work.md`로 새로 생성한다. 다음 구조를 유지한다:
 
 ```markdown
 # work.md
