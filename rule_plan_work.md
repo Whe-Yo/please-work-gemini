@@ -27,7 +27,8 @@
 
 - [x] (전제) 성역 log_for_test 예외 명문화 (README·AGENTS 9절)
 - [x] 토대: 에이전트별 state 파일 + boost silent skip 제거 (Item 2·3 통합)
-- [ ] SessionStart 훅으로 boost 강제 트리거 (G1, 진짜 근본 원인) — 사용자 승인 대기 (글로벌 settings.json 수정)
+- [x] boost 미적용(G1) → 지시 층으로 해결 (글로벌 강제 훅 폐기: 카테고리 오류 + 전 세션 오염). AGENTS 7절·템플릿·CLAUDE.md에 "세션 시작 시 boost 우선" 명시
+- [x] 강제 층 어댑터 생명주기를 manage에 문서화 (치명적 소수만, 제안→승인)
 - [ ] feedback 스킬 v2: log_for_test md 커밋 + 자동화 (동시성·푸시거부·비밀스캔 반영) — 토대 위에서 진행
 - [ ] antithesis 정지 조건: 최대 라운드 상한 + 사용자 중재 (Gemini 1556)
 
