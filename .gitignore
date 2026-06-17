@@ -14,3 +14,6 @@ token.json
 # Dependencies & Logs
 node_modules/
 *.log
+
+# Cross-agent collaboration scratch (ephemeral)
+agents_chat.md

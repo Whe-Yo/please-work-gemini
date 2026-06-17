@@ -1,4 +1,4 @@
-# Harnessing Agent
+# Please-Work Harness
 
 어떤 AI 에이전트(Claude Code, Gemini CLI, Cursor, Cline 등)에도 즉시 탑재할 수 있는 **범용 에이전트 하네스** 모음입니다.
 규칙(Rules), 스킬(Skills), 외부 도구 명세(MCP)의 순수 재료만을 제공하며, 설치 환경이나 런타임에 종속되지 않습니다.
