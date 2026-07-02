@@ -6,6 +6,10 @@
 
 ## [Unreleased]
 
+## [0.2.1] - 260702
+### Fixed
+- **AGENTS.md 정체성 정정(코호트 감사 260702)**: 헤더 "Universal Agent Global Rules"(분리 전 잔재) → "Gemini Agent Global Rules (Cohort)", 대상 서술·강제 수단(런타임 권한·정책)도 정렬. 10절 폭주 차단의 실패 횟수 기준 이중 서술을 4절 참조로 제거.
+
 ## [0.2.0] - 260702
 ### Added
 - **능동 피드백 규칙**: `rules/AGENTS.md` 6절에 "하네스 실사용 중 버그·마찰·개선점 발견 시 사용자 지시 없이도 `feedback` 스킬로 `log_for_test/`에 즉시 기록" 능동 지침 추가. WHY: 다른 세션이 침묵하면 같은 결함이 반복 — 하네스는 실사용 마찰을 모아야 개선된다.
